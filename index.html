@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Player with Volume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="ico/x-icon.png">
+    <style>
+    </style>
+</head>
+<body>
+
+<div class="full-container">
+    <audio id="main-audio" src=""></audio>
+    <section class="player-section">
+        <div class="album-wrapper" id="album-art">🎵</div>    
+        <div class="song-details">
+            <h1 id="title">Select a Song</h1>
+            <p id="artist">Artist Name</p>
+        </div>
+<div class="progress-container" id="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="time-wrapper">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+    </div>
+</div>
+        <div class="controls">
+            <button class="nav-btn" id="prev">Prev</button>
+            <button class="play-btn" id="play-pause">PLAY</button>
+            <button class="nav-btn" id="next">Next</button>
+        <button class="nav-btn" id="repeat-btn" style="margin-left: 10px; font-size: 0.8rem;">Repeat</button>
+            
+        </div>
+
+        <div class="volume-container">
+            <span class="volume-icon">🔈</span>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.7">
+            <span class="volume-icon">🔊</span>
+        </div>
+    </section>
+
+    <section class="playlist-section">
+        <h2>Your Library</h2>
+        <div class="track-list" id="playlist-container">
+            </div>
+    </section> 
+</div>
+<script src="js/js.js"></script>
+</body>
+</html>
